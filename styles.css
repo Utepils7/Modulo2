@@ -1,0 +1,159 @@
+body{
+    background-color: #373737;
+    
+}
+
+header{
+    background-color: rgb(0,0,0,0.5);
+    position: sticky;
+    position: fixed;
+}
+
+.header-fixed{
+    position: fixed;
+    width: 100%;
+}
+
+h1{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    font-weight: 900;
+}
+
+.tituloBBQ{
+    display: flex;
+    height: 230px;
+    align-items: end;
+
+}
+
+nav{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar-brand{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.navbar{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+header a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0px 20px;
+    font-weight: bold;
+    transition: color .9s;
+}
+
+.navbar-brand:hover{
+    color: rgb(239, 140, 47);
+}
+
+header a:hover{
+    color: rgb(239, 140, 47);
+}
+
+
+
+#logo{
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.hero{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  
+    background-image: 
+      url("https://www.southernliving.com/thmb/pBJzR4rMKeTQj8Hr-u_ZmdHj7R0=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/2095301_cueaw9099-38a90a73cef642a9936dd4e2ef3ad8e2.jpg");
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    background-color: #4b4b4b;
+}
+
+.galeria img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 2px;
+    padding-top: 8px;
+    padding-right: 5px;
+    padding-bottom: 2px;
+}
+
+.como-pedir{
+    display:flex;
+    justify-content: left;
+    padding: 50px;
+    color: white;
+}
+
+.como-pedir div{
+    padding-right: 20px;
+
+}
+
+.como-pedir img{
+    min-width: 500px;
+    max-width: 1000px;
+}
+
+.orderFood {
+    color: white;
+    justify-content:right;
+    padding-left: 30px;
+}
+
+.orderFood h1{
+    padding-left: 100px;
+    justify-content: right;
+    align-items: center;
+}
+
+#orderNumberDisplay{
+    color: white;
+}
+
+@media (max-width: 575px) {
+    .hero{
+        width: 80vh;
+    }
+    .tituloBBQ > h1{
+        font-size: x-large;
+    }
+    .galeria{
+        width: 80vh;
+    }
+    .como-pedir{
+        width: 80vh;
+    }
+    .como-pedir > img{
+        display: flex;
+    }
+    .texto-pedir{
+        text-align: left;
+        height: 40vh;
+        font-size:small;
+    }
+    .texto-pedir > h2{
+        font-size: large;
+    }
+}
